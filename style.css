@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serif';  
+  }
+  
+  html {
+      box-sizing: border-box;
+      height: 100%;
+  }
+  
+  body {
+      position: relative;
+      min-height: 100%;
+      box-sizing: inherit;
+  }
+  
+  li {
+      list-style: none;
+  }
+  
+  
+  /* HEADER */
+  
+  header {
+      position: relative;
+      padding: 0 3rem;
+  }
+  
+  .vu1 {
+      width: 100%;
+      height: 100px;
+      max-width: 1200px;
+      margin-top: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .vu5 {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+  }
+  
+  .vu1 .vu4 {
+      display: flex;
+      gap: 5rem;
+  }
+  
+  .vu4 .vu5:hover {
+      color: red;
+      transition: 0.3s;
+  }
+  
+  /* highlight the active page */
+  .vu4 .vu5.active {
+      color: red;
+  }
+  
+  .vu3 {
+      width: 10rem;
+  }
+  
+  .vu6 i {
+      font-size: 1.3rem;
+  }
+  .vu6 .vu5:hover {
+      color: red;
+      transition: 0.3s;
+  }
+  
+  /* highlight the active login or register page */
+  .vu6 .vu5.active {
+      color: red;
+  }
+  
+  .nhan6{
+      margin-right: 5px;
+  }
+  
+  /* FOOTER */
+  footer {
+     text-align: center;
+     background-color: black;
+     color: white;
+     padding: 20px;
+     bottom: 0;
+     width: 100%;
+     position: absolute;
+  }
+  
+  .vu7 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .vu7 h3 {
+      font-size: 1.8rem;
+      line-height: 3rem;
+  }
+  
+  .vu8 {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+  }
+  
+  .vu8 li {
+      margin: 0 10px;
+  }
+  
+  .vu8 a {
+      text-decoration: none;
+      color: white;
+  }
+  
+  .vu8 a i {
+      font-size: 1.1rem;
+      transition: color .4s ease;
+  }
+  
+  .vu8 a:hover i {
+      color: red;
+  }
+  
+  .vu9 {
+      padding: 1rem 0;
+      text-align: center;
+  }
+  
+  .vu9 p {
+      font-size: 1rem;
+      word-spacing: 2px;
+  }
+  
+  /* Login Page */
+  .vu10 {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      min-height: 100vh;
+      padding-top: 10rem;
+      padding-bottom: 30rem;
+      background: url('images/fire1.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .vu11 {
+      width: 420px;
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, .2);
+      color: white;
+      border-radius: 10px;
+      padding: 30px 40px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  }
+  
+  .vu11 h1 {
+      font-size: 2rem;
+      text-align: center;
+  }
+  
+  .vu11 .vu12 {
+      width: 100%;
+      height: 50px;
+      margin: 30px 0;
+      position: relative;
+  }
+  
+  .vu12 input {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      border: 2px solid rgba(255, 255, 255, .2);
+      border-radius: 40px;
+      color: white;
+      padding: 20px 45px 20px 20px;
+  }
+  
+  .vu12 input::placeholder {
+      color: white;
+  }
+  
+  .vu12 i {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1rem;
+  }
+  
+  .vu11 .vu13 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+      margin: -1rem 0 1rem
+  }
+  
+  .vu13 label input {
+      accent-color: white;
+      margin-right: 3px;
+  }
+  
+  .vu13 a {
+      color: white;
+      text-decoration: none;
+  }
+  
+  .vu13 a:hover {
+      text-decoration: underline;
+  }
+  
+  .vu11 .vu14 {
+      width: 100%;
+      height: 2.8rem;
+      background: white;
+      border: none;
+      outline: none;
+      border-radius: 2.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      cursor: pointer;
+      font-size: 1rem;
+      color: #333;
+      font-weight: 600;
+  }
+  .vu25 {
+      width: 100%;
+      height: 2.8rem;
+      background: white;
+      border: none;
+      outline: none;
+      border-radius: 2.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      cursor: pointer;
+      font-size: 1rem;
+      color: #333;
+      font-weight: 600;
+  }
+  
+  .vu11 .vu15 {
+      font-size: 1rem;
+      text-align: center;
+      margin: 20px 0 15px;
+  }
+  
+  .vu15 p a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+  }
+  
+  .vu15 p a:hover {
+      text-decoration: underline;
+  }
+  
+  /* Notification */
+  .vu16 {
+      width: 400px;
+      position: fixed;
+      left: 50%;
+      margin-left: -200px;
+      top: -100%;
+      padding: 20px;
+      z-index: 1000000;
+      background: #fff;
+      color: #333;
+      transition: all 0.3s ease-in-out;
+  }
+  
+  .vu16 img {
+      width: 70px;
+      float: left;
+      margin-right: 10px;
+  }
+  
+  .vu17 {
+      margin-top: 0.5rem;
+      text-align: right;
+  }
+  
+  .vu18,
+  .vu19 {
+      background: red;
+      color: white;
+      border: 0;
+      padding: 8px 15px;
+      font-size: 1rem;
+      cursor: pointer;
+  }
+  
+  /* Announcement */
+  .vu20 {
+      margin: 4rem 4rem 0rem 4rem;
+      width: 90%;
+      min-height: 50vh;
+  }
+  
+  .vu23 {
+      margin: 0 4rem 1rem 4rem;
+      width: 90%;
+      min-height: 50vh;
+  }
+  
+  .vu24 {
+      margin: 0 4rem 4rem 4rem;
+      width: 90%;
+      min-height: 90vh;
+  }
+  
+  .vu21 h2 {
+      font-size: 2rem;
+  }
+  
+  .vu21 p {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      text-align: justify;
+      text-justify: inter-word;
+      line-height: 2;
+  }
+  .vu22 {
+      max-width: 320px;
+      float: left;
+      border: 3px solid white;
+      border-radius: 10px;
+      margin-right: 2rem;
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(100%);
+      transition: 0.5s ease;
+      cursor: pointer;
+  }
+  
+  .vu22:hover {
+      transform: scale(1.1);
+      filter: grayscale(0%);
+  }
+  
+  /* Home page */
+  .nhan3{
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      min-height: 90vh;
+      padding-top: 10rem;
+      padding-bottom: 30rem;
+      background: url('images/fire2.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .nhan4 {
+      width: 50%;
+      margin-top: 6em;
+      margin-bottom: 10em;
+      color: white;
+      text-align: center;
+  }
+  
+  #eyecatcher {
+      font-weight: bold;
+      font-size: 3.2rem;
+      margin-bottom: 30px;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+  }
+  
+  #quote {
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+     font-size: 1.4rem;
+  }
+  
+  #btn {
+      background-color: transparent;
+      border: 2px solid white;
+      padding: 5px 10px;
+      color: white;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      width: 8em;
+      height: 3em;
+      font-size: 1rem;
+      font-weight: 550;
+      margin-top: 35px;
+  }
+  
+  #btn:hover {
+      background-color: white;
+      color: black;
+  }
+  
+  .nhan5 {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+  }
+  
+  /* Register page */
+  .vu11 .nhan {
+      width: 100%;
+      height: 50px;
+      margin: 30px 0 35px 0;
+      position: relative;
+  }
+  
+  .nhan input {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      border: 2px solid rgba(255, 255, 255, .2);
+      border-radius: 40px;
+      color: white;
+      padding: 20px 45px 20px 20px;
+      margin-top: 0.5rem;
+  }
+  
+  .nhan input::placeholder {
+      color: white;
+      opacity: 0.7;
+      font-style: italic;
+  }
+  
+  .vu11 .nhan2 {
+      width: 100%;
+      height: 2.8rem;
+      background: white;
+      border: none;
+      outline: none;
+      border-radius: 2.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      cursor: pointer;
+      font-size: 1rem;
+      color: #333;
+      font-weight: 600;
+  }
+  
+  .nhan2{
+      margin-top: 20px;
+  }
+  
+  /* Manual Page */
+  .vu26 {
+      margin: 2rem 4rem 0rem 4rem;
+      width: 90%;
+      min-height: 100vh;
+  }
+  
+  .vu27 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  .vu28 {
+      max-width: 560px;
+      border: 3px solid white;
+      border-radius: 10px;
+      margin-right: 2rem;
+      background-size: cover;
+      background-position: center; 
+      cursor: pointer;
+  }
+
+  .vu26 h1 {
+    margin-left: 7rem;
+    margin-top: -1rem;
+    font-size: 2rem;
+  }
+  
+  .vu27 p {
+      padding: 0 4rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+      text-align: justify;
+      text-justify: inter-word;
+      line-height: 2;
+      margin-bottom: 2rem;
+  }
+  
+  /* Map Page */
+  .vu29 {
+      margin: 2rem 4rem 0rem 4rem;
+      width: 90%;
+      min-height: 140vh;
+  }
+  
+  .vu30 {
+      width: 100%;
+      height: 500px;
+  }
+
+  /* Map Page */
+  .vu29 {
+    margin: 2rem 3rem 0rem 4rem;
+    min-height: 120vh;
+}
+
+.vu50 {
+  margin: -8rem 4rem 0rem 0rem;
+  min-height: 120vh;
+  
+  }
+
+.vu30 {
+    width: 70%;
+    height: 500px;
+}
+
+.vu31 {
+  float: right;
+  width: 30%;
+  min-height: 120vh;
+}
+
+.vu51 {
+  float: right;
+  width: 30%;
+  min-height: 120vh;
+  margin-top: -31rem;
+}
+.vu51  h2{
+  margin-left: 30%;
+}
+
+.vu31 h2 {
+  margin-left: 45%;
+}
+
+.vu32 {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 40% 10% 50%;
+  gap: 1rem;
+}
+
+.vu33 {
+  width: 100px;
+  margin-left: 2rem;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.vu32 p {
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.vu34 {
+  height: 50px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-right: -2rem;
+}
+
+.vu35 {
+  margin-top: 1rem;
+  height: 50px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.vu37 {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 8rem 8rem 5rem;
+  grid: 1rem;
+}
+.vu38 {
+  width: 50px;
+  margin-left: 2rem;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.vu39 {
+  height: 40px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.vu37 p {
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.vu52 {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 8rem 8rem 5rem;
+  grid: 1rem;
+}
+
+.vu53 {
+  margin: 8rem 0 0 -8rem;
+  display: grid;
+  grid-template-columns: 8rem 8rem 5rem;
+  grid: 1rem;
+}
